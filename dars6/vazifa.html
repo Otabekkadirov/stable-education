@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        form {
+            border: 4px solid purple;
+            background: rgb(198, 198, 206);
+            color: rgb(0, 191, 255);
+        }
+
+        div {
+            width: 500px;
+            margin: 10px auto;
+            border: 5px solid darkcyan;
+            border-radius: 50px;
+            background: rgb(207, 171, 165);
+            padding: 10px;
+        }
+
+
+
+        fieldset {
+            border-width: 5px;
+            border-color: darkcyan;
+            border-style: solid;
+            border-radius: 50px;
+        }
+
+
+        label {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <!-- 10%  Ism -->
+        <div>
+            <label for="username">Ismingizni kiriting:</label>
+            <input type="text" id="username" name="username" placeholder="John">
+        </div>
+        <!-- 10%  familya -->
+        <div>
+            <label for="usersurname">Familyangizni kiriting:</label>
+            <input type="text" name="usersurname" id="usersurname" placeholder="Jackson">
+        </div>
+        <!-- 10%   email -->
+        <div>
+            <label for="email">Emailingizni kiriting:</label>
+            <input type="email" name="useremail" id="email">
+        </div>
+        <!-- 10%   password -->
+        <div>
+            <label for="password">Parolni kiriitng:</label>
+            <input type="password" name="userpassword" id="password">
+        </div>
+
+        <!-- 10%  Dasturlasjni yoqtirasizmi? -->
+        <!-- 10%  ha / yo'q / unchalikmas, faqat bittasini tanlay olsin -->
+        <div>
+
+            <fieldset>
+                <legend>Dasturlashni yoqtirasizmi?</legend>
+
+                <label for="yes">Ha</label>
+                <input type="radio" name="dasturlashni yoqtiradi" id="yes" value="ha">
+
+                <label for="no">Yo'q</label>
+                <input type="radio" name="dasturlashni yoqtiradi" id="no" value="yo'q">
+
+                <label for="maybe">Unchalikmas</label>
+                <input type="radio" name="dasturlashni yoqtiradi" id="maybe" value="unchalikmas">
+            </fieldset>
+        </div>
+
+        <!-- 10%  Quyidagilardan qaysi tillarni bilasiz -->
+        <!-- 10%  kamida 5 ta til, bir nechtasini tanlay olsin -->
+
+        <div>
+            <fieldset>
+                <legend>Quyidagilardan qaysi tillarni bilasiz?</legend>
+
+                <label for="english">Ingliz tili</label>
+                <input type="checkbox" name="languages" id="english" value="english">
+
+                <label for="russian">Rus tili</label>
+                <input type="checkbox" name="languages" id="russian" value="russian">
+
+                <label for="french">Fransuz tili</label>
+                <input type="checkbox" name="languages" id="french" value="french">
+
+                <label for="chinese">Xitoy tili</label>
+                <input type="checkbox" name="languages" id="chinese" value="chinese">
+
+                <label for="turkish">Turk tili</label>
+                <input type="checkbox" name="languages" id="turkish" value="turkish">
+            </fieldset>
+        </div>
+
+        <!-- 10%   tug'ilgan sanasi, kalendarlik bo'lsin -->
+        <div>
+            <label for="birthdate">Tug'ilgan sanangiz:</label>
+            <input type="date" name="birthday" id="birthdate">
+        </div>
+
+        <!-- 10%   yoqtirgan rangi, ranglar ichidan tanlasin -->
+        <div>
+            <label for="color">Yoqtirgan rangi:</label>
+            <input type="color" name="eye-catching color" id="color">
+        </div>
+
+        <!-- 10%   O'qigan kitoblari -->
+        <!-- 10%   10 ta kitob, bir nechta kitobni tanlay olsin       -->
+        <div style="width: 1000px">
+            <label for="books">O'qigan kitoblaringiz:</label>
+            <select name="books" id="books" multiple>
+                <option value="DEFAULT" disabled selected>Yoqtirgan kitobingiz...</option>
+                <option value="Ikki eshik orasi">Ikki eshik orasi</option>
+                <option value="Ufq">Ufq</option>
+                <option value="Alvido qurol">Alvido qurol</option>
+                <option value="Shaytanat">Shaytanat</option>
+                <option value="O'tkan kunlar">O'tkan kunlar</option>
+                <option value="Daftar hoshiyasidagi bitiklar">Daftar hoshiyasidagi bitiklar</option>
+                <option value="Alvido bolalik">Alvido bolalik</option>
+                <option value="Dunyoning ishlari">Dunyoning ishlari</option>
+                <option value="Oq kema">Oq kema</option>
+                <option value="Asrga tatigulik kun">Asrga tatigulik kun</option>
+            </select>
+        </div>
+
+        <!-- 10%    Matematik misol bo'lsin -->
+        <!-- 10%   javobini son ko'rinishida kiritsin -->
+        <div>
+            <fieldset>
+                <legend>Misolni yeching:</legend>
+
+                <label for="math">90 * 5 + (39 +1) * 25 = ?</label>
+                <input type="number" name="math problem" id="math">
+            </fieldset>
+        </div>
+
+        <!-- Ikkta tugma bo'lsin -->
+        <!-- 10%   tozalash -->
+        <!-- 10%   yuborish -->
+        <div>
+            <button type="reset">Tozalash</button>
+            <button type="submit">Yuborish</button>
+        </div>
+    </form>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <title>6-dars</title>
+</head>
+
+<body>
+    <form style="text-align: center;">
+        <label for="firstname">First name:</label>
+        <br>
+        <input type="text" name="username" id="firstname" placeholder="John">
+        <br>
+        <label for="lastname">Last name:</label>
+        <br>
+        <input type="text" name="userlastname" id="lastname" placeholder="Doe">
+        <br>
+        <label for="male">Erkak</label>
+        <input type="radio" name="gender" id="male" value="erkak">
+        <br>
+        <label for="female">Ayol</label>
+        <input type="radio" name="gender" id="female" value="ayol">
+        <br>
+        <label for="country">Where were you born?</label>
+        <br>
+        <select name="country" id="country">
+            <option value="DEFAULT" disabled selected>Your country...</option>
+            <option value="Russia">Russia</option>
+            <option value="USA">USA</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Japan">Japan</option>
+            <option value="Uzbekistan">Uzbekistan</option>
+            <option value="Kazakhstan">Kazakhstan</option>
+        </select>
+        <br>
+        <label for="subjects">Favorite subjects:</label>
+        <br>
+        <select name="subject" id="subjects" multiple size="10">
+            <option value="DEFAULT" disabled selected>Favorite subject...</option>
+            <option value="math">Math</option>
+            <option value="english">English</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="biology">Biology</option>
+            <option value="mother tongue">Mother tongue</option>
+            <option value="russian">Russian</option>
+        </select>
+        <br>
+        <br>
+        <label for="social-media">Your favourite social media</label>
+        <br>
+        <input list="network" name="network" id="social-media">
+        <datalist id="network">
+            <option value="Telegram"></option>
+            <option value="Youtube"></option>
+            <option value="Instagram"></option>
+            <option value="Facebook"></option>
+            <option value="Twitter"></option>
+        </datalist>
+        <br>
+        <br>
+        <label for="comment">Leave your comments here...</label>
+        <br>
+        <textarea name="usercomment" id="comment" cols="30" rows="10" style="resize: none;"
+            placeholder="Leave your comments..."></textarea>
+        <br>
+        <button type="reset">O'chirish</button>
+        <button type="submit">Yuborish</button>
+    </form>
+</body>
+
+</html>
