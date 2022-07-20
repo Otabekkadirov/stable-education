@@ -1,0 +1,83 @@
+:root {
+  --asosiy-rang: rgb(174, 198, 55);
+  --orqa-fon: rgb(168, 60, 31);
+  --text-rang: rgb(200, 200, 200);
+  --input-rang: rgb(29, 30, 28);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--orqa-fon);
+}
+
+.container {
+  display: flex;
+}
+
+img {
+  max-width: 600px;
+}
+
+.content-div {
+  padding: 50px 100px 50px 50px;
+}
+h1 {
+  color: var(--text-rang);
+  text-transform: capitalize;
+  font-size: 80px;
+}
+p {
+  color: var(--asosiy-rang);
+  font-size: 32px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 5px 20px;
+  background-color: var(--input-rang);
+  font-size: 24px;
+  color: var(--text-rang);
+  border: 1px solid var(--orqa-fon);
+  border-radius: 12px;
+}
+
+input::placeholder {
+  font-size: 24px;
+  color: var(--text-rang);
+}
+h3 {
+  color: var(--asosiy-rang);
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button {
+  background-color: var(--orqa-fon);
+  color: var(--asosiy-rang);
+  border: 1px solid var(--asosiy-rang);
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--input-rang);
+  color: var(--text-rang);
+  border-color: var(--text-rang);
+}
