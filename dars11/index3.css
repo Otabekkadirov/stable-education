@@ -1,0 +1,52 @@
+div {
+  background: rgba(15, 200, 100, 0.4);
+  border: 10px solid red;
+  padding: 35px;
+}
+
+h1 {
+  color: rgb(0, 0, 200);
+  border: 1px solid black;
+  height: 70px;
+  padding: 20px;
+  text-align: center;
+
+  text-decoration: underline red 2px solid;
+
+  text-transform: capitalize;
+
+  text-shadow: 2px 2px 5px red;
+  font-size: 60px;
+  font-family: monospace;
+}
+
+span {
+  font-size: 2em;
+}
+
+p {
+  text-align: justify;
+  text-indent: 200px;
+  word-spacing: 20px;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 35px;
+  font-style: italic;
+}
+.serif {
+  font-family: serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.monospace {
+  font-family: monospace;
+}
+.cursive {
+  font-family: cursive;
+}
+.fantasy {
+  font-family: fantasy;
+}
