@@ -1,0 +1,134 @@
+:root {
+  --color-bg: #071555;
+  --color-light: #fcfcfc;
+  --color-plain: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-plain);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.brand-heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 125%;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+  padding: 9.5px 22px;
+  margin-right: 42px;
+}
+.form-input {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+}
+
+.navigation-item {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3px;
+}
+
+input[type="search"] {
+  padding: 7px 8px 7px 36px;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: rgba(60, 60, 67, 0.6);
+
+  background: rgba(250, 250, 250, 0.93);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+input::placeholder {
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: rgba(60, 60, 67, 0.6);
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 190px;
+}
+
+.hero__content {
+  color: var(--color-light);
+}
+h1 {
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 80px;
+  letter-spacing: 0.3px;
+  margin-bottom: 32px;
+}
+.content__text {
+  letter-spacing: 0.3px;
+  margin-bottom: 32px;
+}
+
+.button {
+  background: linear-gradient(86.96deg, #5c80ff 4.36%, #1a52e4 93.5%);
+  border-radius: 20px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: var(--color-plain);
+  border: none;
+  cursor: pointer;
+}
+
+.button-get-started {
+  padding: 13px 52px 13px 43px;
+}
+
+.hero__image {
+  flex-shrink: 0;
+  width: 556px;
+  border-radius: 20px;
+  overflow: hidden;
+}
